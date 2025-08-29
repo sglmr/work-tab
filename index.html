@@ -12,8 +12,9 @@
         body {
             font-family: sans-serif;
         }
+
         span {
-            min-width:3rem;
+            min-width: 3rem;
         }
     </style>
 </head>
@@ -28,8 +29,7 @@
 
             <!-- The form that contains the input field -->
             <form id="command-form" class="mb-8">
-                <input type="text" id="command-input" autofocus
-                    placeholder="e.g., g workday" autocomplete="off"
+                <input type="text" id="command-input" autofocus placeholder="e.g., g workday" autocomplete="off"
                     class="w-full p-4 bg-gray-900 border border-gray-600 rounded-lg text-lg text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition duration-200">
             </form>
 
@@ -41,58 +41,61 @@
                     <!-- Column 1 -->
                     <ul id="provider-list" class="space-y-4 text-gray-400">
                         <!-- My notes -->
-                        <li id="n"
-                            data-url="https://sglmr.com/notes/"
-                            data-querystring="?query={}" class="flex items-center">
-                            <span class="bg-orange-400 text-black text-center font-bold rounded-md px-1 py-0.5 mr-3">n</span>
+                        <li id="n" data-url="https://sglmr.com/notes/" data-querystring="?query={}"
+                            class="flex items-center">
+                            <span
+                                class="bg-orange-400 text-black text-center font-bold rounded-md px-1 py-0.5 mr-3">n</span>
                             <span>Notes</span>
                         </li>
                         <!-- Workday Community -->
-                        <li id="c"
-                            data-url="https://resourcecenter.workday.com/en-us/wrc/home/search.html"
+                        <li id="c" data-url="https://resourcecenter.workday.com/en-us/wrc/home/search.html"
                             data-querystring="#q={}" class="flex items-center">
-                            <span class="bg-teal-700 text-white text-center font-bold rounded-md px-1 py-0.5 mr-3">c</span>
+                            <span
+                                class="bg-teal-700 text-white text-center font-bold rounded-md px-1 py-0.5 mr-3">c</span>
                             <span>WD Community</span>
                         </li>
                         <!-- Workday System Access Request -->
                         <li id="sa"
                             data-url="https://strykercorp.service-now.com/esc?id=sc_cat_item&sys_id=cb59fa6f47ab29d4daf2b5f8536d43e9&table=sc_cat_item"
                             data-querystring="" class="flex items-center">
-                            <span class="bg-yellow-400 text-black text-center font-bold rounded-md px-1 py-0.5 mr-3">sa</span>
+                            <span
+                                class="bg-yellow-400 text-black text-center font-bold rounded-md px-1 py-0.5 mr-3">sa</span>
                             <span>Workday System Access Request</span>
                         </li>
                         <!-- HR Reporting Request -->
                         <li id="hrd"
                             data-url="https://strykercorp.service-now.com/esc?id=sc_cat_item&sys_id=e8877445472ee194daf2b5f8536d43a9&table=sc_cat_item"
                             data-querystring="" class="flex items-center">
-                            <span class="bg-yellow-400 text-black text-center font-bold rounded-md px-1 py-0.5 mr-3">hrd</span>
+                            <span
+                                class="bg-yellow-400 text-black text-center font-bold rounded-md px-1 py-0.5 mr-3">hrd</span>
                             <span>HR Reporting Request</span>
                         </li>
                         <!-- IT General Ticket -->
                         <li id="it"
                             data-url="https://strykercorp.service-now.com/sp?id=sc_cat_item&sys_id=358634d713eaf2809ac6b8e32244b0ef&table=sc_cat_item"
                             data-querystring="" class="flex items-center">
-                            <span class="bg-yellow-400 text-black text-center font-bold rounded-md px-1 py-0.5 mr-3">it</span>
+                            <span
+                                class="bg-yellow-400 text-black text-center font-bold rounded-md px-1 py-0.5 mr-3">it</span>
                             <span>IT General Ticket</span>
                         </li>
                         <!-- Google -->
                         <li id="g" data-url="https://www.google.com/" data-querystring="search?q={}"
                             class="flex items-center">
-                            <span class="bg-emerald-600 text-white text-center font-bold rounded-md px-1 py-0.5 mr-3">g</span>
+                            <span
+                                class="bg-emerald-600 text-white text-center font-bold rounded-md px-1 py-0.5 mr-3">g</span>
                             <span>Google</span>
                         </li>
                         <!-- RFC -->
-                         <!-- "https://stryker.sharepoint.com/sites/TeamAntzHRSystems-DocumentationandTesting/Shared Documents/Documentation and Testing/RFC" -->
+                        <!-- "https://stryker.sharepoint.com/sites/TeamAntzHRSystems-DocumentationandTesting/Shared Documents/Documentation and Testing/RFC" -->
                         <li id="rfc"
-                            data-url="https://stryker.sharepoint.com/sites/TeamAntzHRSystems-DocumentationandTesting/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FTeamAntzHRSystems%2DDocumentationandTesting%2FShared%20Documents%2FDocumentation%20and%20Testing%2FRFC"                            
+                            data-url="https://stryker.sharepoint.com/sites/TeamAntzHRSystems-DocumentationandTesting/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FTeamAntzHRSystems%2DDocumentationandTesting%2FShared%20Documents%2FDocumentation%20and%20Testing%2FRFC"
                             data-querystring="&q={}&sortField=Modified&isAscending=false" class="flex items-center">
                             <span
                                 class="bg-emerald-600 text-white text-center font-bold rounded-md px-1 py-0.5 mr-3">rfc</span>
                             <span>RFC Documents</span>
-                          </li>                        <!-- ADO -->
-                        <li id="ado"
-                            data-url="https://strykervsts-corp.visualstudio.com/"
-                            data-querystring="" class="flex items-center">
+                        </li> <!-- ADO -->
+                        <li id="ado" data-url="https://strykervsts-corp.visualstudio.com/" data-querystring=""
+                            class="flex items-center">
                             <span
                                 class="bg-emerald-600 text-white text-center font-bold rounded-md px-1 py-0.5 mr-3">ado</span>
                             <span>ADO Test Projects</span>
@@ -115,70 +118,86 @@
                             class="flex items-center">
                             <span
                                 class="bg-sky-600 text-white text-center font-bold rounded-md px-1 py-0.5 mr-3">s1</span>
-                            <span><pre>stryker1</pre> <small>Payroll, Time. Absence</small></span>
+                            <span>
+                                <pre>stryker1</pre> <small>Payroll, Time. Absence</small>
+                            </span>
                         </li>
                         <!-- Stryker 2 -->
                         <li id="s2" data-url="https://impl.workday.com/stryker2/d/search.htmld" data-querystring="?q={}"
                             class="flex items-center">
                             <span
                                 class="bg-sky-600 text-white text-center font-bold rounded-md px-1 py-0.5 mr-3">s2</span>
-                            <span><pre>stryker2</pre> Comp, Talent, CAR, Skills</span>
+                            <span>
+                                <pre>stryker2</pre> Comp, Talent, CAR, Skills
+                            </span>
                         </li>
                         <!-- Stryker 3 -->
                         <li id="s3" data-url="https://impl.workday.com/stryker3/d/search.htmld" data-querystring="?q={}"
                             class="flex items-center">
                             <span
                                 class="bg-sky-600 text-white text-center font-bold rounded-md px-1 py-0.5 mr-3">s3</span>
-                            <span><pre>stryker3</pre> HCM, TA, Offer & Change Job, Benevity</span>
+                            <span>
+                                <pre>stryker3</pre> HCM, TA, Offer & Change Job, Benevity
+                            </span>
                         </li>
                         <!-- Stryker 4 -->
                         <li id="s4" data-url="https://impl.workday.com/stryker4/d/search.htmld" data-querystring="?q={}"
                             class="flex items-center">
                             <span
                                 class="bg-sky-600 text-white text-center font-bold rounded-md px-1 py-0.5 mr-3">s4</span>
-                            <span><pre>stryker4</pre> Reporting, EMEA Payroll, HS & Paradox</span>
+                            <span>
+                                <pre>stryker4</pre> Reporting, EMEA Payroll, HS & Paradox
+                            </span>
                         </li>
                         <!-- Stryker 5 -->
                         <li id="s5" data-url="https://impl.workday.com/stryker5/d/search.htmld" data-querystring="?q={}"
                             class="flex items-center">
                             <span
                                 class="bg-sky-600 text-white text-center font-bold rounded-md px-1 py-0.5 mr-3">s5</span>
-                            <span><pre>stryker5</pre> Integrations, M&A, Restructures, Accelerate</span>
+                            <span>
+                                <pre>stryker5</pre> Integrations, M&A, Restructures, Accelerate
+                            </span>
                         </li>
                         <!-- Stryker 7 -->
                         <li id="s7" data-url="https://impl.workday.com/stryker7/d/search.htmld" data-querystring="?q={}"
                             class="flex items-center">
                             <span
                                 class="bg-sky-600 text-white text-center font-bold rounded-md px-1 py-0.5 mr-3">s7</span>
-                            <span><pre>stryker7</pre> Workday Release/Kainos Staging & Testing</span>
+                            <span>
+                                <pre>stryker7</pre> Workday Release/Kainos Staging & Testing
+                            </span>
                         </li>
                         <!-- Stryker 9 -->
                         <li id="s9" data-url="https://impl.workday.com/stryker9/d/search.htmld" data-querystring="?q={}"
                             class="flex items-center">
                             <span
                                 class="bg-sky-600 text-white text-center font-bold rounded-md px-1 py-0.5 mr-3">s9</span>
-                            <span><pre>stryker9</pre> Europe WFM & Payroll Transformation</span>
+                            <span>
+                                <pre>stryker9</pre> Europe WFM & Payroll Transformation
+                            </span>
                         </li>
                         <!-- Workday Production -->
-                        <li id="p" data-url="https://www.myworkday.com/stryker/d/search.htmld"
-                            data-querystring="?q={}" class="flex items-center">
+                        <li id="p" data-url="https://www.myworkday.com/stryker/d/search.htmld" data-querystring="?q={}"
+                            class="flex items-center">
                             <span
                                 class="bg-red-700 text-white text-center font-bold rounded-md px-1 py-0.5 mr-3">p</span>
                             <span>Production Tenant</span>
                         </li>
                         <!-- Workday GMS -->
-                        <li id="gms" data-url="https://impl.workday.com/stryker_gms1/d/search.htmld" data-querystring="?q={}"
-                            class="flex items-center">
+                        <li id="gms" data-url="https://impl.workday.com/stryker_gms1/d/search.htmld"
+                            data-querystring="?q={}" class="flex items-center">
                             <span
                                 class="bg-indigo-600 text-white text-center font-bold rounded-md px-1 py-0.5 mr-3">gms</span>
                             <span>GMS tenant</span>
                         </li>
                         <!-- Stryker Preview -->
-                        <li id="pre" data-url="https://impl.workday.com/stryker_preview/d/search.htmld" data-querystring="?q={}"
-                            class="flex items-center">
+                        <li id="pre" data-url="https://impl.workday.com/stryker_preview/d/search.htmld"
+                            data-querystring="?q={}" class="flex items-center">
                             <span
                                 class="bg-indigo-600 text-white text-center font-bold rounded-md px-1 py-0.5 mr-3">pre</span>
-                            <span><pre>Preview Tenant</pre> Benefits & Kainos</span>
+                            <span>
+                                <pre>Preview Tenant</pre> Benefits & Kainos
+                            </span>
                         </li>
                     </ul>
                 </div>
@@ -205,48 +224,51 @@
 
             // Split the input value into parts based on spaces
             const parts = inputValue.split(' ');
-
-            // The first part is the search provider's ID (prefix)
             const providerId = parts[0];
-
-            // The rest of the parts form the search query
-            const queryParts = parts.slice(1);
-            const searchQuery = queryParts.join(' ');
-
-            // Find the list item that matches the provided ID
             const providerElement = document.getElementById(providerId);
 
-            // If no matching provider is found, do nothing.
-            if (!providerElement) {
-                console.error(`No provider found with prefix: ${providerId}`);
-                commandInput.classList.add('border-sky-600', 'focus:ring-sky-600'); // Visual feedback for error
-                return;
-            }
-
-            // If a provider was found, remove any previous error styling
+            // Remove any previous error styling
             commandInput.classList.remove('border-sky-600', 'focus:ring-sky-600');
 
-            // Get the base URL and querystring template from the data-* attributes
-            const baseUrl = providerElement.dataset.url;
-            const queryStringTemplate = providerElement.dataset.querystring;
+            // Check if a matching command prefix was found
+            if (providerElement) {
+                // --- LOGIC FOR KNOWN COMMANDS (Original Behavior) ---
+                const queryParts = parts.slice(1);
+                const searchQuery = queryParts.join(' ');
+                const baseUrl = providerElement.dataset.url;
+                const queryStringTemplate = providerElement.dataset.querystring;
 
-            let finalUrl = baseUrl;
+                let finalUrl = baseUrl;
 
-            // Check if there is a search query to process
-            if (searchQuery) {
-                // Encode the search query to handle special characters like spaces, &, etc.
-                const encodedQuery = encodeURIComponent(searchQuery);
-                // Replace the {} placeholder with the encoded query
-                const finalQueryString = queryStringTemplate.replace('{}', encodedQuery);
-                // Append the querystring to the base URL
-                finalUrl += finalQueryString;
+                if (searchQuery) {
+                    const encodedQuery = encodeURIComponent(searchQuery);
+                    const finalQueryString = queryStringTemplate.replace('{}', encodedQuery);
+                    finalUrl += finalQueryString;
+                }
+                console.log(`Redirecting to: ${finalUrl}`);
+                window.location.href = finalUrl;
+            } else {
+                // --- NEW: FALLBACK LOGIC FOR UNKNOWN COMMANDS ---
+
+                // 1. Check if the input looks like a URL (e.g., "loopwerk.io")
+                // This simple check looks for a dot and no spaces.
+                const isUrl = inputValue.includes('.') && !inputValue.includes(' ');
+
+                if (isUrl) {
+                    // If it's a URL, navigate to it, adding "https://" if needed.
+                    let destinationUrl = inputValue;
+                    if (!destinationUrl.startsWith('http://') && !destinationUrl.startsWith('https://')) {
+                        destinationUrl = 'https://' + destinationUrl;
+                    }
+                    console.log(`Navigating to URL: ${destinationUrl}`);
+                    window.location.href = destinationUrl;
+                } else {
+                    // 2. If it's not a command or a URL, default to a Google search.
+                    console.log(`No command found. Defaulting to Google search for: "${inputValue}"`);
+                    const encodedQuery = encodeURIComponent(inputValue);
+                    window.location.href = `https://www.google.com/search?q=${encodedQuery}`;
+                }
             }
-
-            // Log the final URL to the console for debugging
-            console.log(`Redirecting to: ${finalUrl}`);
-
-            // Redirect the browser to the newly constructed URL
-            window.location.href = finalUrl;
         });
     </script>
 
